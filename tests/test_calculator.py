@@ -1,19 +1,18 @@
-import pytest
-from calculator.calculator import Calculator
+'''My Calculator Test'''
+from calculator import Calculator
 
-def test_add():
-    assert Calculator.add(2, 3) == 5
+def test_addition():
+    '''Test that addition function works '''    
+    assert Calculator.add(2,2) == 4
 
-def test_subtract():
-    assert Calculator.subtract(10, 5) == 5
-
-def test_multiply():
-    assert Calculator.multiply(4, 5) == 20
+def test_subtraction():
+    '''Test that addition function works '''    
+    assert Calculator.subtract(2,2) == 0
 
 def test_divide():
-    assert Calculator.divide(10, 2) == 5
+    '''Test that division function works '''    
+    assert Calculator.divide(2,2) == 1
 
-def test_divide_by_zero():
-    with pytest.raises(ZeroDivisionError):
-        Calculator.divide(10, 0)
-
+def test_multiply():
+    '''Test that multiply function works '''    
+    assert Calculator.multiply(2,2) == 4

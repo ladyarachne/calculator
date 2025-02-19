@@ -1,5 +1,4 @@
-__pycache__/
-venv/
-.pylintrc
-.pytest_cache/
-
+*.sw*
+.coverage
+.pytest_cache
+*__pycache__
