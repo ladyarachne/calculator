@@ -26,6 +26,7 @@ from calculator.calculation import Calculation  # Represents a single calculatio
 from decimal import Decimal  # For high-precision arithmetic
 from typing import Callable  # For type hinting callable objects
 
+
 # Definition of the Calculator class
 class Calculator:
     @staticmethod
@@ -57,3 +58,4 @@ class Calculator:
     def divide(a: Decimal, b: Decimal) -> Decimal:
         # Perform division by delegating to the _perform_operation method with the divide operation
         return Calculator._perform_operation(a, b, divide)
+
